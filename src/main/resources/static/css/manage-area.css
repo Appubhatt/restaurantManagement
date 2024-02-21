@@ -1,0 +1,80 @@
+.contentcontainer{
+    width: 95%;
+    height: 95%;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px -3px black;
+}
+.heading{
+    font-size: 25px;
+    font-weight: bold;
+    width: 100%;
+    margin: 10px 30px;
+
+}
+
+.cardcontainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    padding: 10px;
+    border-radius: 4px;
+    margin: 0px 10px;
+}
+
+.table{
+    padding: 20px;
+    margin-top: 25px;
+    width: 100%;
+    height: 46vh;
+
+}
+
+.table table{
+    width: 100%;
+    height: 100%;
+}
+.table table tbody tr td {
+    padding-left: 5px;
+}
+
+.no{
+    width: 10%;
+}
+
+.name{
+    width: 15%;
+}
+
+.des{
+    width: 50%;
+}
+
+.handle{
+    width: 20%;
+}
+.add-area-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.add-area-form{
+    margin: auto;
+    margin-top: 2rem;
+    height: 80vh;
+    width: 80vh;
+    font-size: large;
+    font-weight: 500;
+    justify-items: center;
+}
+.cell_class{
+
+    word-break: break-word;
+
+}
+
+.page-info{
+
+}

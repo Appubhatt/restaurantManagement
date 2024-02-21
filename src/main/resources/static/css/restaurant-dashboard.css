@@ -1,0 +1,112 @@
+body{
+    overflow-x:hidden ;
+}
+.main{
+    display: flex;
+
+    position: relative;
+}
+.nav{
+    background-color: white;
+    height: 7vh;
+    width: 100vw;
+    position: absolute;
+    box-shadow: 20vw 0 10px -2px black;
+}
+.heading-text{
+    display: flex;
+    align-items: center;
+    font-size:30px;
+    color: black;
+    font-weight:bold ;
+    width: 28vw;
+    justify-content: space-evenly;
+}
+
+.side-bar{
+    margin-top: 60px;
+    height: 94vh;
+    width: 20vw;
+    background-color: white;
+    box-shadow: 0px 0 20px -2px black;
+}
+
+
+.list{
+    color: black;
+    height: 80%;
+    margin-top: 10px;
+}
+.list ul{
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 600;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 0px;
+}
+
+.list ul a{
+    width: 100%;
+}
+
+.list ul a li{
+
+    text-align: left;
+    /* width: 60%; */
+    padding-left: 40px;
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+
+.list ul a li:hover{
+    background-color: rgba(100, 149, 237, 0.1);
+    color: cadetblue;
+}
+
+.list ul a li div{
+    width: 10%;
+
+}
+
+.list ul a li span{
+    width: 86%;
+
+    text-align: left;
+}
+.side-bar-link{
+    text-decoration: none;
+    color: black;
+}
+.side-bar-link:hover{
+
+    color: cadetblue;
+}
+
+#content{
+    width: 80vw;
+    height: 94vh;
+    margin-top: 7vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentcontainer{
+    width: 95%;
+    height: 95%;
+    border-radius: 20px;
+    background-color: #ffffff;
+    background-image: url("../images/rest-image.jpg");
+    background-size: cover;
+    box-shadow: 0px 0px 10px -3px black;
+}
+
