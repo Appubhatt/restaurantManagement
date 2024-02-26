@@ -10,4 +10,6 @@ public interface OfferService {
     Offers saveOffer(OfferRequest request);
 
     List<Offers> fetchAllOffers(String restEmail);
+
+    List<Offers> fetchAll();
 }

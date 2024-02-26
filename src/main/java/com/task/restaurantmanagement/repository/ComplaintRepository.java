@@ -10,4 +10,6 @@ public interface ComplaintRepository extends JpaRepository<Complaint,Integer> {
 
     List<Complaint> findAllByRestaurantOrderById(Restaurant r);
 
+    List<Complaint> findAllByOrderById();
+
 }

@@ -45,10 +45,19 @@ public class ComplaintController {
         }
     }
 
-    @PostMapping("/restaurant/fetchAll")
-    public ResponseEntity<List<Complaint>> fetchAll(@RequestParam String restEmail){
+    @PostMapping("/restaurant/fetchAllEmail")
+    public ResponseEntity<List<Complaint>> fetchAllComplaintByEmail(@RequestParam String restEmail){
         try{
             return new ResponseEntity<>(complaintService.findAllByOrder(restEmail), HttpStatus.OK);
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        }
+    }
+    @PostMapping("/admin/fetchAll")
+    public ResponseEntity<List<Complaint>> fetchAllComplaint(){
+        try{
+            return new ResponseEntity<>(complaintService.findAll(), HttpStatus.OK);
         }catch (Exception e){
             System.out.println(e.getMessage());
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);

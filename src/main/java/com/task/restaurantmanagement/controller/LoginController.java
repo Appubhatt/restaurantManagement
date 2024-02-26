@@ -48,6 +48,20 @@ public class LoginController {
         return "manage-subcategory";
     }
 
+    @GetMapping("/admin/manage-restaurant")
+    public String manageRestaurant(){
+        return "manage-restaurant";
+    }
+
+    @GetMapping("/admin/manage-offers")
+    public String adminManageOffers(){
+        return "manage-offers-admin";
+    }
+
+    @GetMapping("/admin/manage-complaints")
+    public String adminManageComplaint(){
+        return "manage-complaint-admin";
+    }
     @PostMapping("/login-submit")
     public ResponseEntity<?> loginSubmit(@RequestBody Admin admin) {
         Admin result = adminService.findByEmailAndPassword(admin.getEmail(), admin.getPassword());

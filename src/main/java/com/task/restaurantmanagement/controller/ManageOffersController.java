@@ -31,13 +31,23 @@ public class ManageOffersController {
         }
     }
 
-    @PostMapping("/restaurant/fetchAllOffers")
-    public ResponseEntity<List<Offers>> fetchAllOffers(@RequestParam String restEmail){
+    @PostMapping("/restaurant/fetchAllOffersEmail")
+    public ResponseEntity<List<Offers>> fetchAllOffersByEmail(@RequestParam String restEmail){
         try{
             return new ResponseEntity<>(offerService.fetchAllOffers(restEmail), HttpStatus.OK);
         }catch (Exception e){
             System.out.println(e.getMessage());
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }
+    }
+    @PostMapping("/admin/fetch-all-offers")
+    public ResponseEntity<List<Offers>> DisplayAllOffers(){
+        try{
+            return new ResponseEntity<>(offerService.fetchAll(), HttpStatus.OK);
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        }
+
     }
 }

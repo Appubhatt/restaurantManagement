@@ -41,4 +41,9 @@ import java.util.List;
         Restaurant r = restaurantRepository.findByEmail(restEmail);
         return complaintRepository.findAllByRestaurantOrderById(r);
     }
+
+    @Override
+    public List<Complaint> findAll() {
+        return complaintRepository.findAllByOrderById();
+    }
 }

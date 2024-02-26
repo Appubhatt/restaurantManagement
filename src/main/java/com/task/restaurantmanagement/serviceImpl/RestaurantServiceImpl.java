@@ -11,6 +11,8 @@ import com.task.restaurantmanagement.service.RestaurantService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class RestaurantServiceImpl implements RestaurantService {
 
@@ -22,6 +24,11 @@ public class RestaurantServiceImpl implements RestaurantService {
 
     @Autowired
     RestaurantRepository restaurantRepository;
+
+    @Override
+    public List<Restaurant> fetchAll() {
+        return restaurantRepository.findAllByOrderByRestaurantId();
+    }
 
     @Override
     public Restaurant saveRestaurant(RestaurantRequest rest) {

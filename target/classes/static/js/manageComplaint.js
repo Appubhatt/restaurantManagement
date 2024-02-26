@@ -4,7 +4,7 @@ $(function (){
         "restEmail":sessionStorage.getItem("restEmail")
     }
     $.ajax({
-        url:"http://localhost:8080/restaurant/fetchAll",
+        url:"http://localhost:8080/restaurant/fetchAllEmail",
         type: "post",
         data:data,
         success:function (resp){

@@ -43,7 +43,7 @@ $(function (){
     }
     $.ajax({
 
-        url:"http://localhost:8080/restaurant/fetchAllOffers",
+        url:"http://localhost:8080/restaurant/fetchAllOffersEmail",
         type:"post",
         data:data,
         success: function (resp){
@@ -139,8 +139,9 @@ $(function (){
                 data:JSON.stringify(json),
                 contentType:"application/json",
                 success:function (resp) {
-                    console.log(resp)
-                    a
+                    alert("Record added");
+
+                    location.reload()
                 },error:function (resp) {
                     console.log(resp)
                 }

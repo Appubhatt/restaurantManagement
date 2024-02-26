@@ -65,4 +65,9 @@ public class OfferServiceImpl implements OfferService {
         Restaurant r = restaurantRepository.findByEmail(email);
         return offerRepository.findAllByRestaurantOrderById(r);
     }
+
+    @Override
+    public List<Offers> fetchAll() {
+        return offerRepository.findAllByOrderById();
+    }
 }

@@ -16,6 +16,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import java.util.List;
+
 @Controller
 @RequestMapping
 public class RestaurantController {
@@ -40,6 +42,15 @@ public class RestaurantController {
         }catch (Exception e){
             System.out.println(e);
            return new ResponseEntity<>("Email already used",HttpStatus.BAD_REQUEST);
+        }
+    }
+
+    @PostMapping("/restaurant/fetch-all")
+    public ResponseEntity<List<Restaurant>> fetchAllRestaurant(){
+        try{
+            return new ResponseEntity<>(restaurantService.fetchAll(),HttpStatus.OK);
+        }catch (Exception e){
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }
     }
     @GetMapping("/restaurant/restaurant-dashboard")

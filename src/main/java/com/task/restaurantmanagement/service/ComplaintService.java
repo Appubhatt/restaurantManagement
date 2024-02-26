@@ -10,4 +10,6 @@ public interface ComplaintService {
     Complaint saveComplaint(String file, ComplaintRequest request);
 
     List<Complaint> findAllByOrder(String restEmail);
+
+    List<Complaint> findAll();
 }

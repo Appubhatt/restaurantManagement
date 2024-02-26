@@ -9,4 +9,5 @@ import java.util.List;
 public interface OfferRepository extends JpaRepository<Offers,Integer> {
 
     List<Offers> findAllByRestaurantOrderById(Restaurant r);
+    List<Offers> findAllByOrderById();
 }

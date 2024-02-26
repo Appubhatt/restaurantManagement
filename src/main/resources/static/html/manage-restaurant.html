@@ -17,7 +17,7 @@
           integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
           src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
-  <script src="../js/manage-city.js"></script>
+  <script src="../js/manageRestaurant.js"></script>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -28,7 +28,7 @@
   <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
 
 
-  <link href="../css/manage-city.css" rel="stylesheet">
+  <link href="../css/manage-restaurant.css" rel="stylesheet">
 
   <link href="../css/admin-index.css" rel="stylesheet">
 </head>
@@ -51,7 +51,7 @@
             <div class="side-bar-image"><i class="fa-solid fa-desktop"></i></div>
             <span> Dashboard</span></li>
         </a>
-        <a class="side-bar-link" href="/admin/manage-city" style=" background: rgb(167,169,208)">
+        <a class="side-bar-link" href="/admin/manage-city" >
           <li>
             <div class="side-bar-image"><i class="fa-solid fa-building"></i></div>
             <span>Manage City</span></li>
@@ -71,17 +71,17 @@
             <div class="side-bar-image"><i class="fa-solid fa-bell-concierge"></i></div>
             <span>Manage Sub Category</span></li>
         </a>
-        <a class="side-bar-link" href="/admin/manage-city">
+        <a class="side-bar-link" href="/admin/manage-restaurant" style=" background: rgb(167,169,208)">
           <li>
             <div class="side-bar-image"><i class="fa-solid fa-spoon"></i></div>
             <span>Manage Restaurant</span></li>
         </a>
-        <a class="side-bar-link" href="/admin/manage-city">
+        <a class="side-bar-link" href="/admin/manage-offers">
           <li>
             <div class="side-bar-image"><i class="fa-solid fa-bag-shopping"></i></div>
             <span>Manage Offers</span></li>
         </a>
-        <a class="side-bar-link" href="/admin/manage-city">
+        <a class="side-bar-link" href="/admin/manage-complaints">
           <li>
             <div class="side-bar-image"><i class="fa-solid fa-phone-flip"></i></div>
             <span>Manage Complaint</span></li>
@@ -120,18 +120,17 @@
             </form>
           </div>
         </div>
-        <div class="m-4">
 
-          <button class="btn btn-info addcity" type="button">Add city</button>
-        </div>
         <div class="table">
           <table>
             <thead>
             <tr>
               <th class="no" scope="col">No</th>
-              <th class="name" scope="col">City Name</th>
-              <th class="des" scope="col">City Description</th>
-              <th class="handle" scope="col">Action</th>
+              <th class="name" scope="col">Restaurant Name</th>
+              <th class="des" scope="col">Address</th>
+              <th class="name" scope="col">email</th>
+              <th class="name" scope="col">City</th>
+              <th class="name" scope="col">Area</th>
             </tr>
             </thead>
             <tbody id="tableData">
@@ -139,8 +138,9 @@
               <th scope="row">1</th>
               <td>Mark</td>
               <td class="cell_class">ottoottootoottoottoottoottoottoottoottoottoottoottoottoottoottoottoottoottoottoottoottoottoottoottoottoottoot</td>
-              <td> <button class="btn btn-success" type="button"><i class="fa-solid fa-pen-to-square"></i></button> <button class="btn btn-danger" type="button"><i class="fa-regular fa-trash-can"></i></button></td>
-
+              <td> apuva@gmail.com</td>
+              <td> apuva@gmail.com</td>
+              <td> apuva@gmail.com</td>
             </tr>
 
             </tbody>
