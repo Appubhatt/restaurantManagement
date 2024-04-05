@@ -15,4 +15,13 @@
 - Restaurant will only use the category and subcategory which is declared by Admin.
 - Restaurant will create Their own food products.
 - Restaurant will create offers on food products.
-- If restaurant is facing any difficulties they can send their complains to Admin to solve it. 
+- If restaurant is facing any difficulties they can send their complains to Admin to solve it.
+
+## Technology Used:
+- For front-end development Html, Css and JavaScript is used.
+- For back-end development Spring boot application is used.
+- Database is manage by postgres.
+
+## Database Requirement:
+- Please create one database in postgres and update the database name and password inside application.properties file in of the folder.
+- Note: if using any other database please add the dependancy to pom.xml file and update the spring.jpa.properties.hibernate.dialect in application.properties. Don't forget to give url, username and password of your database.
