@@ -39,6 +39,11 @@ $(function (){
         $(".city-details-data").hide();
         $(".add-product-container").show();
     })
+    $(".backBtn").click(function (event) {
+        $(".city-details-data").show();
+        $(".add-product-container").hide();
+    })
+
     var html = '<option value="">Select Option</option>';
     $("#subcategory").html(html);
     $.ajax({

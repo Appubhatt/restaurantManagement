@@ -5,6 +5,11 @@ $(function (){
         $(".add-offer-container").show();
         $(".city-details-data").hide();
     })
+
+    $(".backBtn").click(function (){
+        $(".add-offer-container").hide();
+        $(".city-details-data").show();
+    })
     var html = '<option value="">Select Option</option>';
     $("#subcategory").html(html);
     $.ajax({

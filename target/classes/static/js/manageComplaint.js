@@ -36,6 +36,10 @@ $(function (){
         $(".add-complaint-container").show();
         $(".city-details-data").hide();
     })
+    $(".backBtn").click(function (){
+        $(".add-complaint-container").hide();
+        $(".city-details-data").show();
+    })
     $(".add-complaint-form").validate({
         rules:{
             complaintSubject:{
