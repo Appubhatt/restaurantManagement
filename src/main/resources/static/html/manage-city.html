@@ -161,7 +161,8 @@
                 <div class="heading">
                     Add city
                 </div>
-                <form class="add-city-form" >
+
+                <form class="add-city-form" id="addCity">
                     <input type="hidden" name="cityId" id="cityId" value="0">
                     <div class="form-group mb-5">
                         <label for="ctyName">City Name</label>
@@ -173,6 +174,7 @@
                         <textarea class="form-control"  id="ctyDesc" name="ctyDesc" rows="3" placeholder="Description" ></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary saveBtn">Save</button>
+                    <button class="btn btn-info backBtn" type="button">Back</button>
                 </form>
             </div>
         </div>

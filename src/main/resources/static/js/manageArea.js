@@ -94,6 +94,11 @@ $(function () {
         $(".add-area-container").show();
         fetchCities(undefined);
     })
+    $(".backBtn").click(function (event) {
+        $(".city-details-data").show();
+        $(".add-area-container").hide();
+
+    })
 
 
     $(".add-area-form").validate({

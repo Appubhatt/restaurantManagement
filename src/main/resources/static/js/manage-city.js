@@ -73,6 +73,10 @@ $(function(){
         $(".city-details-data").hide();
         $(".add-city-container").show();
     })
+    $(".backBtn").click(function (){
+        $(".city-details-data").show();
+        $(".add-city-container").hide();
+    })
 
     $(".add-city-form").validate({
         rules:{
@@ -94,8 +98,6 @@ $(function(){
                 "cityDescription" : $("#ctyDesc").val()
 
             }
-
-            console.log(json)
             if(parseInt($("#cityId").val())==0) {
                 $.ajax({
 

@@ -90,6 +90,12 @@ $(function(){
         $(".add-subcategory-container").show();
         fetchCategories(undefined);
     })
+
+    $(".backBtn").click(function (event) {
+        $(".city-details-data").show();
+        $(".add-subcategory-container").hide();
+        fetchCategories(undefined);
+    })
     // $(".saveBtn").click(function (event) {
     //     $(".city-details-data").hide();
     //     $(".add-city-container").show();

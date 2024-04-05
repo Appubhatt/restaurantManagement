@@ -70,6 +70,12 @@ $(function(){
 
     })
 
+    $(".backBtn").click(function (event) {
+        $(".city-details-data").show();
+        $(".add-category-container").hide();
+
+    })
+
     $(".add-category-form").validate({
         rules:{
             categoryName:{

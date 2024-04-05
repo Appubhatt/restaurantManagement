@@ -115,7 +115,7 @@ $().ready(function () {
                     console.log(response);
                 },
                 error: function (response) {
-                    alert(response);
+                    console(response);
                 }
             })
         }
